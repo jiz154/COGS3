@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schedule for Jessica Zhou-jiz154-FA23</title>
+        <!--<style>
+            body {
+                text-align: center;
+                vertical-align: center;
+            }
+            .class {
+                background-color: aliceblue; 
+            }
+            .drive {
+                background-color: lightgray;
+            }
+            .internship {
+                background-color: pink;
+            }
+            .eat {
+                background-color: lightcyan;
+            }
+            .exercise {
+                background-color: lightsalmon;
+            }
+            .study {
+                background-color: peachpuff;
+            }
+            .idk {
+                background-color: plum;
+            }
+        </style>-->
+        <link rel="stylesheet" href="styleLab2.css">
+    </head>
+    <body>
+        <h1>Lab 2</h1>
+        <h6>Name: Jessica Zhou <br> UCSD username: jiz154 <br> Student ID: A17006906</h6>
+        <h5>Part C:</h5>
+        <h3>How to define a table?</h3>
+        <p>
+            <h4>How to define a table?</h4>
+            <dl>
+                <dt>&lt;tr&gt;</dt>
+                    <dd>defines rows in a table</dd>
+                <dt>&lt;th&gt;</dt>
+                    <dd>defines header cells in a table</dd>
+                <dt>&lt;td&gt;</dt>
+                    <dd>defines normal cells in a table</dd>
+                <dt>&lt;thead&gt;</dt>
+                    <dd>defines the header in a table</dd>
+                <dt>&lt;tfoot&gt;</dt>
+                    <dd>defines the footer in a table</dd>
+                <dt>&lt;caption&gt;</dt>
+                    <dd>provides a title or decription for the table</dd>
+            </dl>
+        </p>
+            <h4>What is the diffeence between colspan and rowspan?</h4>
+        <p>
+            <dl>
+                <dt>colspan</dt>
+                    <dd>combines cells horizontally across columns</dd>
+                <dt>rowspan</dt>
+                    <dd>combines cells vertically across rows</dd>
+            </dl>
+        </p>
+            <h4>What is the difference between cells spacing and padding?</h4>
+            <p>
+                <dl>
+                    <dt>cells spacing</dt>
+                        <dd>determines the space between cells in a table</dd>
+                    <dt>padding</dt>
+                        <dd>determines the space between content in a cell and the cell's border</dd>
+                </dl>
+            </p>
+            <h4>How do you define table borders using CSS?</h4>
+            <p class="indent">
+                table {border-collapse: COLLAPSE OR SEPARATE; border-spacing: #; border: #px solid COLOR;}
+            </p>
+            <h4>How do you control border widths using CSS?</h4>
+            <p class="indent">
+                in the brackets with whatever selector you are trying to style, write "border-width" and input the desired size
+            </p>
+            <br>
+            
+
+            <h5>Part A:</h5>
+        <table>
+            <caption><h2>My Fall Quarter Weekly Schedule 2023</h2></caption>
+            <thead>
+            <tr class="header">
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="column1">06:00-06:59</td>
+                <td colspan="3" rowspan="3"><a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep">Sleep</a></td>
+                <!--<td>Tuesday</td>
+                <td>Wednesday</td>-->
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Get Up and <br>Breakfast</a></td>
+                <td rowspan="3"><a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep">Sleep</a></td>
+                <td rowspan="2"><a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep">Sleep</a></td>
+                <td rowspan="5"><a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep">Sleep</a></td>
+            </tr>
+            <tr>
+                <td class="column1">07:00-07:59</td>
+                <!--<td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>-->
+                <td class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>Friday</td>
+                <td>Saturday</td>
+                <td>sun</td>-->
+            </tr>
+            <tr>
+                <td  class="column1">08:00-08:59</td>
+                <!--<td>Monday</td>
+                <td>Tuesday</td> 
+                <td>Wednesday</td>-->
+                <td rowspan="5" class="internship"><img src="https://alameda.edu/wp-content/uploads/2021/07/Ns8G3Fkf03TTWONTIUsj8yeRtKRFtqsA1588080138-1024x538-1.jpg" alt="dental assisting"><br><a href="https://www.powaysmilesdentistry.com/">Internship</a></td>
+                <!--<td>Friday</td>-->
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Breakfast</a></td>
+                <!--<td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">09:00-09:59</td>
+                <td colspan="3"><a href="https://www.healthline.com/health/best-time-to-sleep">Get Up</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>-->
+                <!--td>thu</td>-->
+                <td><a href="https://www.healthline.com/health/best-time-to-sleep">Get Up</a></td>
+                <td class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">10:00-10:59</td>
+                <td class="eat"colspan="3"><a href="https://www.sweetgreen.com/menu">Breakfast</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>-->
+                <!--td>thu</td>-->
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Breakfast</a></td>
+                <td rowspan="11" class="internship"><img src="https://alameda.edu/wp-content/uploads/2021/07/Ns8G3Fkf03TTWONTIUsj8yeRtKRFtqsA1588080138-1024x538-1.jpg" alt="dental assisting"><br><a href="https://www.powaysmilesdentistry.com/">Internship</a></td>
+                <!--<td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">11:00-11:59</td>
+                <td colspan="3" class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>-->
+                <!--td>thu</td>-->
+                <td class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>sat</td>-->
+                <td><a href="https://www.healthline.com/health/best-time-to-sleep">Get Up</a></td>
+            </tr>
+            <tr>
+                <td class="column1">12:00-12:59</td>
+                <td class="class"><a href="https://catalog.ucsd.edu/courses/PHYS.html">PHYS 1A Lecture</a></td>
+                <td rowspan="2" class="class"><a href="https://catalog.ucsd.edu/courses/PHYS.html">PHYS 1AL Lab</a></td>
+                <td class="class"><a href="https://catalog.ucsd.edu/courses/PHYS.html">PHYS 1A Lecture</a></td>
+                <!--td>thu</td>-->
+                <td class="class"><a href="https://catalog.ucsd.edu/courses/PHYS.html">PHYS 1A Lecture</a></td>
+                <!--<td>sat</td>-->
+                <td class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+            </tr>
+            <tr>
+                <td class="column1">13:00-13:59</td>
+                <td class="study" rowspan="6"><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADSUcwABDuh-BoZIjKziwdFoRjy3QKWI7v0&keywords=victor%20kim&origin=RICH_QUERY_SUGGESTION&position=0&searchId=7dfefc48-0384-458b-b37b-f14096088cec&sid=V~G&spellCorrectionEnabled=false">Study with Victor</a></td>
+                <!--td>tue</td>-->
+                <td class="study"rowspan="4"><a href="https://library.ucsd.edu/about/geisel-library.html">Study at Geisel</a></td>
+                <td colspan="2" class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>drive</td>-->
+                <!--<td>sat</td>-->
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Brunch</a></td>
+            </tr>
+            <tr>
+                <td class="column1">14:00-14:59</td>
+                <!--td>mon</td>-->
+                <td rowspan="2" class="class"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a></td>
+                <!--<td>wed</td>-->
+                <td rowspan="2" class="class"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a></td>
+                <td rowspan="7" class="internship"><img src="https://alameda.edu/wp-content/uploads/2021/07/Ns8G3Fkf03TTWONTIUsj8yeRtKRFtqsA1588080138-1024x538-1.jpg" alt="dental assisting"><br><a href="https://www.powaysmilesdentistry.com/">Internship</a></td>
+                <!--<td>sat</td>-->
+                <td class="exercise"><img src="https://images.squarespace-cdn.com/content/v1/5b620b5d1aef1d7a9d1606ca/1660099757866-K855LNIOIWZH0LY5EATB/20201103_pilates_republic_hamilton_56187.jpg" alt="pilates"><br><a href="https://befitmp.com/">Pilates</a></td>
+            </tr>
+            <tr>
+                <td class="column1">15:00-15:29</td>
+                <!--td>mon</td>-->
+                <!--<td>tue</td>-->
+                <!--<td>wed</td>-->
+                <!--td>thu</td>-->
+                <!--td>fri</td>-->
+                <!--<td>sat</td>-->
+                <td class="exercise" rowspan="2"><img src="https://static01.nyt.com/images/2014/06/15/magazine/15look_littlenemos-slide-DSMU/15look_littlenemos-slide-DSMU-superJumbo.jpg" alt="swimming"><br><a href="https://www.dictionary.com/browse/swim">Swim</a></td>
+            </tr>
+            <tr>
+                <td class="column1">15:30-15:59</td>
+                <!--td>mon</td>-->
+                <td rowspan="2" class="class"><a href="https://catalog.ucsd.edu/courses/CHEM.html">CHEM 40A Lecture</a></td>
+                <!--<td>wed</td>-->
+                <td rowspan="2" class="class"><a href="https://catalog.ucsd.edu/courses/CHEM.html">CHEM 40A Lecture</a></td>
+                <!--td>fri</td>-->
+                <!--<td>sat</td>
+                <td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">16:00-16:59</td>
+                <!--td>mon</td>-->
+                <!--<td>tue</td>-->
+                <td class="class"><a href="https://catalog.ucsd.edu/courses/CHEM.html">CHEM 40A Discussion</a></td>
+                <!--td>thu</td>-->
+                <!--td>fri</td>-->
+                <!--<td>sat</td>-->
+                <td><a href="https://www.swimrightacademy.com/why-we-rinse-off-before-and-after-swim-lessons/#:~:text=Showering%20after%20you%20swim%20will,swimming%20in%20the%20same%20way!">Shower</a></td>
+            </tr>
+            <tr>
+                <td class="column1">17:00-17:59</td>
+                <!--td>mon</td>-->
+                <td colspan="3" class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>Drive</td>
+                <td>Drive</td>-->
+                <!--td>fri</td>-->
+                <!--<td>sat</td>-->
+                <td><a href="https://www.allrecipes.com/recipes/">Cook</a></td>
+            </tr>
+            <tr>
+                <td class="column1">18:00-18:59</td>
+                <td class="class"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lab</a></td>
+                <td class="eat"colspan="3"><a href="https://www.sweetgreen.com/menu">Dinner</a></td>
+                <!--<td>wed</td>
+                <td>thu</td>-->
+                <!--td>fri</td>-->
+                <!--<td>sat</td>-->
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Dinner</a></td>
+            </tr>
+            <tr>
+                <td class="column1">19:00-19:59</td>
+                <td class="eat"><a href="https://www.sweetgreen.com/menu">Dinner</a></td>
+                <td class="exercise" rowspan="2"><img src="https://kpopomo.shop/cdn/shop/articles/kpop-dance-cover_1400x.progressive.jpg?v=1680101511" alt="kpop"><br><a href="https://www.instagram.com/ucsdkanmvmnt/?hl=en">Dance</a></td>
+                <td rowspan="2"><img src="https://3.files.edl.io/60c8/18/10/22/171316-6ff283a1-280f-4d70-b616-ae77c12c4488.jpg" alt="drama club"><br><a href="https://www.jensenjia.com/work/sanwu-drama-club#:~:text=SanWu%20Drama%20Club%2C%20also%20known,and%20present%20their%20latest%20drama.">Club Meeting</a></td>
+                <td class="exercise" rowspan="2"><img src="https://kpopomo.shop/cdn/shop/articles/kpop-dance-cover_1400x.progressive.jpg?v=1680101511" alt="kpop"><br><a href="https://www.instagram.com/ucsdkanmvmnt/?hl=en">Dance</a></td>
+                <!--td>fri</td>-->
+                <!--<td>sat</td>-->
+                <td rowspan="2"><img src="data:image/jpeg;base64,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" alt="kdrama"><br><a href="https://www.netflix.com/">Watch TV</a></td>
+            </tr>
+            <tr>
+                <td class="column1">20:00-20:59</td>
+                <td class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>
+                <td>thu</td>-->
+                <td colspan="2" class="drive"><a href="https://www.dmv.ca.gov/portal/">Drive</a></td>
+                <!--<td>drive</td>
+                <td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">21:00-21:59</td>
+                <td class="study" rowspan="2" colspan="4"><a href="https://www.merriam-webster.com/dictionary/study">Study with Damian</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>
+                <td>thu</td>-->
+                <td class="eat" colspan="2"><a href="https://www.sweetgreen.com/menu">Dinner</a></td>
+                <!--<td>sat</td>-->
+                <td class="study" rowspan="2"><a href="https://www.merriam-webster.com/dictionary/study">Study</a></td>
+            </tr>
+            <tr>
+                <td class="column1">22:00-22:59</td>
+                <!--<td>mon</td>
+                <td>tue</td>
+                <td>wed</td>
+                <td>thu</td>-->
+                <td class="study" colspan="2"><a href="https://www.merriam-webster.com/dictionary/study">Study</a></td>
+                <!--<td>sat</td>
+                <td>sun</td>-->
+            </tr>
+            <tr>
+                <td class="column1">23:00-23:59</td>
+                <td colspan="7"><a href="https://www.healthline.com/health/best-time-to-sleep">Get Ready for Bed</a></td>
+                <!--<td>tue</td>
+                <td>wed</td>
+                <td>thu</td>
+                <td>fri</td>
+                <td>sat</td>
+                <td>sun</td>-->
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
